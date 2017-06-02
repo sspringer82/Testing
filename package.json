@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w lib/*.spec.js"
+    "test": "mocha -w lib/*.spec.js",
+    "karma": "karma start"
   },
   "repository": {
     "type": "git",

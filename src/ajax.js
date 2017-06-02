@@ -1,11 +1,13 @@
-function logName(cb) {
-  $.ajax({
+function logName(logger) {
+  const promise = $.ajax({
     url: '/user'
-  }).then(function (data) {
+  });
+
+  promise.then(function (data) {
     logger.log(data, 'info');
-    cb();
   }, function (err) {
     logger.error(err, 'error');
-    cb();
   });
+
+  return promise;
 }

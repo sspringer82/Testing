@@ -12,8 +12,8 @@ describe('server communication', function () {
     const logger = new Logger();
     spyOn(logger, 'log');
 
-    logName(function () {
-      expect(logger.log).not.toHaveBeenCalledWith('Klaus');
+    logName(logger).then(() => {
+      expect(logger.log).toHaveBeenCalledWith('Klaus', 'info');
       done();
     });
     
