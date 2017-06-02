@@ -13,3 +13,7 @@ Konfiguration für Karma erstellen: node_modules/.bin/karma init
 
 Start Server: node_modules/.bin/karma start
 Run Tests: node_modules/.bin/karma run
+
+
+Links:
+https://jasmine.github.io/
