@@ -60,13 +60,19 @@ describe('Calc', function () {
   });
 
   describe('async', function () {
-    it('should async', function(done) {
+    it('should async', function(/*done*/) {
+      jasmine.clock().install();
+
       calc.asyncAdd(1, 2);
 
-      setTimeout(function () {
+      jasmine.clock().tick(1002);
+      //setTimeout(function () {
         expect(calc.result).toBe(3);
-        done();
-      }, 1001);
+        //done();
+      //}, 1001);
+
+
+      jasmine.clock().uninstall();
     });
   })
 
