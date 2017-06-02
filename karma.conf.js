@@ -18,6 +18,7 @@ module.exports = function(config) {
       'node_modules/jquery/dist/jquery.js',
       'node_modules/jasmine-ajax/lib/mock-ajax.js',
       'src/*.js',
+      'src/fixtures/*.html'
     ],
 
 
