@@ -4,9 +4,7 @@ describe('Spy', function () {
 
     spy(1, 2, 3);
 
-    debugger;
-
-    expect(spy).not.toHaveBeenCalled();
-    expect(spy).not.toHaveBeenCalledWith(1, 2, 3);
+    expect(spy).toHaveBeenCalled();
+    expect(spy).toHaveBeenCalledWith(1, 2, 3);
   });
 });
