@@ -36,6 +36,14 @@ describe('Spy', function () {
 
       expect(result).toBe(2); 
     });
+
+    it('should return 2', function () {
+      spyOn(window, 'getRandomInteger').and.returnValue(2);
+
+      const result = getRandomInteger();
+
+      expect(result).toBe(2);
+    })
   });
 
 });

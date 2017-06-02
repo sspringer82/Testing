@@ -45,3 +45,9 @@ log(message, severety)
 bei severety info wird console.log aufgerufen
 bei severety error wird console.error 
 aufgerufen
+
+
+## Server communication
+
+1. install jquery: npm install jquery
+2. jquery laden: karma.conf.js files
