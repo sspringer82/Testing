@@ -46,6 +46,28 @@ describe('Calc', function () {
       
       expect(result).toBe(5);
     });
+
+    it('should fail if a string is provided', function () {
+
+      function willThrow() {
+        calc.add('2', 3);
+      }
+
+      //const willThrow = calc.add.bind(calc, '2', 3);
+      
+      expect(willThrow).toThrow();
+    });
   });
+
+  describe('async', function () {
+    it('should async', function(done) {
+      calc.asyncAdd(1, 2);
+
+      setTimeout(function () {
+        expect(calc.result).toBe(3);
+        done();
+      }, 1001);
+    });
+  })
 
 });

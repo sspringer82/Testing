@@ -22,3 +22,17 @@ https://jasmine.github.io/
 
 fit/fdescribe - exklusiv ausführen
 xit/xdescribe - skippen
+
+## Exception handling
+
+Aufgabe: Werft eine Exception, wenn ein String übergeben wird
+
+prüfung auf String: typeof myVar === 'string'
+
+function func() {
+  calc.add('2', 3);
+}
+
+func = calc.add.bind(add, '2', 3);
+
+expect(func).toThrow()
