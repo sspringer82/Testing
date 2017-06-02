@@ -21,6 +21,21 @@ describe('Spy', function () {
     execute(obj.callback);
 
     expect(obj.callback).toHaveBeenCalled();
-  })
+  });
+
+  describe('random', function() {
+    it('should return the value 2', function () {
+
+      //spyOn(Math, 'random').and.returnValue(0.2);
+      
+      spyOn(Math, 'random').and.callFake(function () {
+        return 0.2
+      });
+
+      const result = getRandomInteger();
+
+      expect(result).toBe(2); 
+    });
+  });
 
 });
