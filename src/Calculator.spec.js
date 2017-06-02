@@ -30,17 +30,22 @@ describe('Calc', function () {
     expect(result).toBe(true);
   });
 
+  describe('add', function () {
+    beforeEach(function() {
+      console.log('before addition');
+    });
 
-  it('should add 1 and 1 and return 2', function () {
-    const result = calc.add(1, 1);
+    it('should add 1 and 1 and return 2', function () {
+      const result = calc.add(1, 1);
 
-    expect(result).toBe(2);
-  })
+      expect(result).toBe(2);
+    })
 
-  it('should add 2 and 3 and return 5', function () {
-    const result = calc.add(2, 3);
-    
-    expect(result).toBe(5);
-  })
+    it('should add 2 and 3 and return 5', function () {
+      const result = calc.add(2, 3);
+      
+      expect(result).toBe(5);
+    });
+  });
 
 });

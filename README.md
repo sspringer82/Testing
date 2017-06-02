@@ -17,3 +17,8 @@ Run Tests: node_modules/.bin/karma run
 
 Links:
 https://jasmine.github.io/
+
+## jasmine
+
+fit/fdescribe - exklusiv ausführen
+xit/xdescribe - skippen
