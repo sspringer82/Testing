@@ -1,9 +1,11 @@
 class Logger {
   log(msg, sev) {
+    const date = (new Date()).toString();
+
     if (sev === 'info') {
-      console.log(msg);
+      console.log(date, msg);
     } else if (sev === 'error') {
-      console.error(msg);
+      console.error(date, msg);
     }
   }
 }

@@ -65,7 +65,7 @@ describe('Calc', function () {
 
       calc.asyncAdd(1, 2);
 
-      jasmine.clock().tick(1002);
+      jasmine.clock().tick(1000);
       //setTimeout(function () {
         expect(calc.result).toBe(3);
         //done();
