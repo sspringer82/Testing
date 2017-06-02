@@ -10,3 +10,6 @@ Pakete installieren: npm install
 
 Konfiguration für Karma erstellen: node_modules/.bin/karma init
 (WICHTIG: windows: Backslashes)
+
+Start Server: node_modules/.bin/karma start
+Run Tests: node_modules/.bin/karma run
