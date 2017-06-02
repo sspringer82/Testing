@@ -1,7 +1,11 @@
-function logName() {
-  $.get('/user').then(function (data) {
-    console.log(data);
+function logName(cb) {
+  $.ajax({
+    url: '/user'
+  }).then(function (data) {
+    logger.log(data, 'info');
+    cb();
   }, function (err) {
-    console.error(err);
+    logger.error(err, 'error');
+    cb();
   });
 }

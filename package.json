@@ -15,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/sspringer82/Testing/issues"
   },
+  "private": true,
   "homepage": "https://github.com/sspringer82/Testing#readme",
   "dependencies": {
     "jasmine-ajax": "^3.3.1",
