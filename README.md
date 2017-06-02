@@ -36,3 +36,12 @@ function func() {
 func = calc.add.bind(add, '2', 3);
 
 expect(func).toThrow()
+
+
+## Logger
+Schreibt einen Logger 
+log(message, severety)
+
+bei severety info wird console.log aufgerufen
+bei severety error wird console.error 
+aufgerufen
