@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/sspringer82/Testing#readme",
   "dependencies": {
+    "jasmine-ajax": "^3.3.1",
     "jasmine-core": "^2.6.2",
+    "jquery": "^3.2.1",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
     "karma-jasmine": "^1.1.0"
